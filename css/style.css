@@ -1,0 +1,38 @@
+.container {
+  max-width: 960px;
+}
+
+input:invalid {
+  border-color: red; 
+}
+
+input:invalid:focus {
+  border-color: red; 
+}
+
+input:valid {
+  border-color: green; 
+}
+
+input:valid:focus {
+  border-color: green; 
+}
+
+input:invalid ~ .invalid-feedback {
+  display: block; 
+}
+
+input:valid ~ .valid-feedback {
+  display: block; }
+
+/* Mensaje de error */
+.invalid-feedback {
+  color: red;
+  display: none;
+}
+
+/* Mensaje de éxito */
+.valid-feedback {
+  color: green;
+  display: none; 
+}
